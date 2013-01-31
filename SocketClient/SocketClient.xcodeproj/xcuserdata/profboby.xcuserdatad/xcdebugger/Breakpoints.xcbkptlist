@@ -4,7 +4,11 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
+<<<<<<< HEAD
          shouldBeEnabled = "Yes"
+=======
+         shouldBeEnabled = "No"
+>>>>>>> Example HTTP Sockets Server and Client
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SocketClient/AppDelegate.m"
@@ -81,5 +85,60 @@
          landmarkName = "-socketDidDisconnect:withError:"
          landmarkType = "5">
       </FileBreakpoint>
+<<<<<<< HEAD
+=======
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SocketClient/AppDelegate.m"
+         timestampString = "381220628.877259"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "115"
+         endingLineNumber = "115"
+         landmarkName = "-netServiceBrowser:didRemoveService:moreComing:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SocketClient/AppDelegate.m"
+         timestampString = "381220631.559895"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "120"
+         endingLineNumber = "120"
+         landmarkName = "-netServiceBrowserDidStopSearch:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SocketClient/AppDelegate.m"
+         timestampString = "381220632.572817"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "125"
+         endingLineNumber = "125"
+         landmarkName = "-netService:didNotResolve:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SocketClient/AppDelegate.m"
+         timestampString = "381222288.181893"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "89"
+         endingLineNumber = "89"
+         landmarkName = "-netServiceBrowser:didNotSearch:"
+         landmarkType = "5">
+      </FileBreakpoint>
+>>>>>>> Example HTTP Sockets Server and Client
    </FileBreakpoints>
 </Bucket>

@@ -7,7 +7,11 @@
 //
 
 #import "AppDelegate.h"
+<<<<<<< HEAD
 #import "ViewController.h"
+=======
+#import "MainViewController.h"
+>>>>>>> Example HTTP Sockets Server and Client
 #import "GCDAsyncSocket.h"
 #import "DDLog.h"
 #import "DDTTYLogger.h"
@@ -30,12 +34,21 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+<<<<<<< HEAD
         self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil] autorelease];
     } else {
         self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil] autorelease];
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+=======
+        self.viewController = [[[MainViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil] autorelease];
+    } else {
+        self.viewController = [[[MainViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil] autorelease];
+    }
+    self.window.rootViewController = self.viewController;
+   // [self.window makeKeyAndVisible];
+>>>>>>> Example HTTP Sockets Server and Client
     
     // Configure logging framework
 	

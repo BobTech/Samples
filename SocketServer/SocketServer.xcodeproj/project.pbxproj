@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
+=======
+		1B16F83B16BAA59800A50893 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16F83916BAA59800A50893 /* MainViewController.m */; };
+		1B16F83C16BAA59800A50893 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B16F83A16BAA59800A50893 /* MainViewController.xib */; };
+>>>>>>> Example HTTP Sockets Server and Client
 		1B48440216B8327D008060BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B48440116B8327D008060BF /* UIKit.framework */; };
 		1B48440416B8327D008060BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B48440316B8327D008060BF /* Foundation.framework */; };
 		1B48440616B8327D008060BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B48440516B8327D008060BF /* CoreGraphics.framework */; };
@@ -16,9 +21,13 @@
 		1B48441416B8327D008060BF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B48441316B8327D008060BF /* Default.png */; };
 		1B48441616B8327D008060BF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B48441516B8327D008060BF /* Default@2x.png */; };
 		1B48441816B8327D008060BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B48441716B8327D008060BF /* Default-568h@2x.png */; };
+<<<<<<< HEAD
 		1B48441B16B8327D008060BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B48441A16B8327D008060BF /* ViewController.m */; };
 		1B48441E16B8327D008060BF /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B48441C16B8327D008060BF /* ViewController_iPhone.xib */; };
 		1B48442116B8327D008060BF /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B48441F16B8327D008060BF /* ViewController_iPad.xib */; };
+=======
+		1B48441B16B8327D008060BF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B48441A16B8327D008060BF /* FirstViewController.m */; };
+>>>>>>> Example HTTP Sockets Server and Client
 		1B48442916B8327E008060BF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B48442816B8327E008060BF /* SenTestingKit.framework */; };
 		1B48442A16B8327E008060BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B48440116B8327D008060BF /* UIKit.framework */; };
 		1B48442B16B8327E008060BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B48440316B8327D008060BF /* Foundation.framework */; };
@@ -36,6 +45,10 @@
 		1B48446016B83412008060BF /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B48445716B83412008060BF /* ContextFilterLogFormatter.m */; };
 		1B48446116B83412008060BF /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B48445916B83412008060BF /* DispatchQueueLogFormatter.m */; };
 		1B48446216B83412008060BF /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1B48445A16B83412008060BF /* README.txt */; };
+<<<<<<< HEAD
+=======
+		1B4844D316B9769D008060BF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4844D216B9769D008060BF /* SecondViewController.m */; };
+>>>>>>> Example HTTP Sockets Server and Client
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
+=======
+		1B16F83816BAA59800A50893 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = SocketServer/MainViewController.h; sourceTree = "<group>"; };
+		1B16F83916BAA59800A50893 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = SocketServer/MainViewController.m; sourceTree = "<group>"; };
+		1B16F83A16BAA59800A50893 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = SocketServer/MainViewController.xib; sourceTree = "<group>"; };
+>>>>>>> Example HTTP Sockets Server and Client
 		1B4843FE16B8327D008060BF /* SocketServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B48440116B8327D008060BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1B48440316B8327D008060BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,10 +81,15 @@
 		1B48441316B8327D008060BF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1B48441516B8327D008060BF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1B48441716B8327D008060BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		1B48441916B8327D008060BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1B48441A16B8327D008060BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1B48441D16B8327D008060BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		1B48442016B8327D008060BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+=======
+		1B48441916B8327D008060BF /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		1B48441A16B8327D008060BF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+>>>>>>> Example HTTP Sockets Server and Client
 		1B48442716B8327E008060BF /* SocketServerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketServerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B48442816B8327E008060BF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1B48443016B8327E008060BF /* SocketServerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SocketServerTests-Info.plist"; sourceTree = "<group>"; };
@@ -93,6 +117,11 @@
 		1B48445816B83412008060BF /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		1B48445916B83412008060BF /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		1B48445A16B83412008060BF /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		1B4844D116B9769D008060BF /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1B4844D216B9769D008060BF /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+>>>>>>> Example HTTP Sockets Server and Client
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +153,12 @@
 		1B4843F516B8327D008060BF = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				1B16F83816BAA59800A50893 /* MainViewController.h */,
+				1B16F83916BAA59800A50893 /* MainViewController.m */,
+				1B16F83A16BAA59800A50893 /* MainViewController.xib */,
+>>>>>>> Example HTTP Sockets Server and Client
 				1B48444A16B83412008060BF /* CocoaLumberjack */,
 				1B48444316B83406008060BF /* GCD */,
 				1B48444116B833F7008060BF /* Security.framework */,
@@ -160,11 +195,19 @@
 			children = (
 				1B48441016B8327D008060BF /* AppDelegate.h */,
 				1B48441116B8327D008060BF /* AppDelegate.m */,
+<<<<<<< HEAD
 				1B48441916B8327D008060BF /* ViewController.h */,
 				1B48441A16B8327D008060BF /* ViewController.m */,
 				1B48441C16B8327D008060BF /* ViewController_iPhone.xib */,
 				1B48441F16B8327D008060BF /* ViewController_iPad.xib */,
 				1B48440816B8327D008060BF /* Supporting Files */,
+=======
+				1B48441916B8327D008060BF /* FirstViewController.h */,
+				1B48441A16B8327D008060BF /* FirstViewController.m */,
+				1B48440816B8327D008060BF /* Supporting Files */,
+				1B4844D116B9769D008060BF /* SecondViewController.h */,
+				1B4844D216B9769D008060BF /* SecondViewController.m */,
+>>>>>>> Example HTTP Sockets Server and Client
 			);
 			path = SocketServer;
 			sourceTree = "<group>";
@@ -320,9 +363,14 @@
 				1B48441416B8327D008060BF /* Default.png in Resources */,
 				1B48441616B8327D008060BF /* Default@2x.png in Resources */,
 				1B48441816B8327D008060BF /* Default-568h@2x.png in Resources */,
+<<<<<<< HEAD
 				1B48441E16B8327D008060BF /* ViewController_iPhone.xib in Resources */,
 				1B48442116B8327D008060BF /* ViewController_iPad.xib in Resources */,
 				1B48446216B83412008060BF /* README.txt in Resources */,
+=======
+				1B48446216B83412008060BF /* README.txt in Resources */,
+				1B16F83C16BAA59800A50893 /* MainViewController.xib in Resources */,
+>>>>>>> Example HTTP Sockets Server and Client
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +407,11 @@
 			files = (
 				1B48440E16B8327D008060BF /* main.m in Sources */,
 				1B48441216B8327D008060BF /* AppDelegate.m in Sources */,
+<<<<<<< HEAD
 				1B48441B16B8327D008060BF /* ViewController.m in Sources */,
+=======
+				1B48441B16B8327D008060BF /* FirstViewController.m in Sources */,
+>>>>>>> Example HTTP Sockets Server and Client
 				1B48444816B83406008060BF /* GCDAsyncSocket.m in Sources */,
 				1B48444916B83406008060BF /* GCDAsyncUdpSocket.m in Sources */,
 				1B48445B16B83412008060BF /* DDAbstractDatabaseLogger.m in Sources */,
@@ -369,6 +421,11 @@
 				1B48445F16B83412008060BF /* DDTTYLogger.m in Sources */,
 				1B48446016B83412008060BF /* ContextFilterLogFormatter.m in Sources */,
 				1B48446116B83412008060BF /* DispatchQueueLogFormatter.m in Sources */,
+<<<<<<< HEAD
+=======
+				1B4844D316B9769D008060BF /* SecondViewController.m in Sources */,
+				1B16F83B16BAA59800A50893 /* MainViewController.m in Sources */,
+>>>>>>> Example HTTP Sockets Server and Client
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +456,7 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		1B48441C16B8327D008060BF /* ViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -415,6 +473,8 @@
 			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> Example HTTP Sockets Server and Client
 		1B48443116B8327E008060BF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -557,6 +617,10 @@
 				1B48443B16B8327E008060BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
+=======
+			defaultConfigurationName = Release;
+>>>>>>> Example HTTP Sockets Server and Client
 		};
 		1B48443C16B8327E008060BF /* Build configuration list for PBXNativeTarget "SocketServerTests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +629,10 @@
 				1B48443E16B8327E008060BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
+=======
+			defaultConfigurationName = Release;
+>>>>>>> Example HTTP Sockets Server and Client
 		};
 /* End XCConfigurationList section */
 	};

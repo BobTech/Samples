@@ -56,7 +56,11 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
+<<<<<<< HEAD
          shouldBeEnabled = "Yes"
+=======
+         shouldBeEnabled = "No"
+>>>>>>> Example HTTP Sockets Server and Client
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SocketServer/CocoaLumberjack/DDTTYLogger.m"
@@ -81,5 +85,60 @@
          landmarkName = "-init"
          landmarkType = "5">
       </FileBreakpoint>
+<<<<<<< HEAD
+=======
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SocketServer/FirstViewController.m"
+         timestampString = "381314037.73979"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "19"
+         endingLineNumber = "19"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SocketServer/SecondViewController.m"
+         timestampString = "381314912.339741"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "19"
+         endingLineNumber = "19"
+         landmarkName = "-initWithNibName:bundle:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SocketServer/AppDelegate.m"
+         timestampString = "381330904.80392"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "30"
+         endingLineNumber = "30"
+         landmarkName = "-application:didFinishLaunchingWithOptions:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SocketServer/MainViewController.m"
+         timestampString = "381330941.289198"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "19"
+         endingLineNumber = "19"
+         landmarkName = "-initWithNibName:bundle:"
+         landmarkType = "5">
+      </FileBreakpoint>
+>>>>>>> Example HTTP Sockets Server and Client
    </FileBreakpoints>
 </Bucket>

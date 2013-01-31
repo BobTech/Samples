@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+<<<<<<< HEAD
 @class ViewController;
+=======
+@class MainViewController;
+>>>>>>> Example HTTP Sockets Server and Client
 @class GCDAsyncSocket;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, NSNetServiceDelegate>
@@ -22,6 +26,10 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+<<<<<<< HEAD
 @property (strong, nonatomic) ViewController *viewController;
+=======
+@property (strong, nonatomic) MainViewController *viewController;
+>>>>>>> Example HTTP Sockets Server and Client
 
 @end

@@ -52,8 +52,13 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	netServiceBrowser = [[NSNetServiceBrowser alloc] init];
 	
 	[netServiceBrowser setDelegate:self];
+<<<<<<< HEAD
 	[netServiceBrowser searchForServicesOfType:@"_YourServiceName._tcp." inDomain:@"local."];
     
+=======
+	[netServiceBrowser searchForServicesOfType:@"_ipp._tcp." inDomain:@"local."];
+    //_services._dns-sd._tcp.
+>>>>>>> Example HTTP Sockets Server and Client
     return YES;
 }
 
