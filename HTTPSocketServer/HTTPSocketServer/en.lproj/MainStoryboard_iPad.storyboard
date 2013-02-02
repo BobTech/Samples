@@ -142,9 +142,11 @@
                     <connections>
                         <outlet property="StartButton" destination="KJe-bY-bC2" id="QOp-Zg-rSW"/>
                         <outlet property="connectedDevicesView" destination="Gad-kD-E7h" id="AM5-2K-umK"/>
+                        <outlet property="connectedSocketsView" destination="Gad-kD-E7h" id="pJi-3r-sBA"/>
                         <outlet property="ipAddress" destination="1sh-RI-6Zo" id="phw-kj-F18"/>
                         <outlet property="logView" destination="rQ5-O0-uIa" id="Ray-Lc-iok"/>
                         <outlet property="port" destination="uF6-Mw-hmx" id="Qd6-hH-Ixk"/>
+                        <outlet property="scrollView" destination="QKc-NP-nXb" id="n5f-Zw-s4y"/>
                         <outlet property="startStopButton" destination="KJe-bY-bC2" id="apc-lf-JPx"/>
                     </connections>
                 </viewController>

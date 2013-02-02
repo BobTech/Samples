@@ -64,6 +64,10 @@
     NSLog(@"My IP address: %@", myIpAddress);
     
     [ipAddress setText:myIpAddress];
+    
+    [connectedSocketsView setDataSource:self];
+    [connectedSocketsView setDelegate:self];
+
 
 }
 
@@ -127,6 +131,8 @@
 		
 		[self.port setEnabled:NO];
 		[startStopButton setTitle:@"Stop" forState:UIControlStateNormal];
+        
+         
 	}
 	else
 	{
@@ -155,6 +161,12 @@
 
 }
 
+- (void)scrollToBottom
+{
+	CGPoint bottomOffset = CGPointMake(0, scrollView.contentSize.height - scrollView.bounds.size.height);
+    [scrollView setContentOffset:bottomOffset animated:YES];
+
+}
 
 - (void)logError:(NSString *)msg
 {
@@ -167,7 +179,7 @@
 	
 	NSString *text = [[logView text] stringByAppendingString:as.string];
     [logView setText:text];
-//	[self scrollToBottom];
+	[self scrollToBottom];
 }
 
 - (void)logInfo:(NSString *)msg
@@ -181,7 +193,7 @@
 	
     NSString *text = [[logView text] stringByAppendingString:as.string];
     [logView setText:text];
-	//[self scrollToBottom];
+	[self scrollToBottom];
 }
 
 - (void)logMessage:(NSString *)msg
@@ -195,7 +207,7 @@
 	
     NSString *text = [[logView text] stringByAppendingString:as.string];
     [logView setText:text];
-	//[self scrollToBottom];
+	[self scrollToBottom];
 }
 
 
@@ -207,6 +219,7 @@
 	{
 		[connectedSockets addObject:newSocket];
 	}
+    
 	
 	NSString *host = [newSocket connectedHost];
 	UInt16 port = [newSocket connectedPort];
@@ -225,6 +238,9 @@
 	[newSocket writeData:welcomeData withTimeout:-1 tag:WELCOME_MSG];
 	
 	[newSocket readDataToData:[GCDAsyncSocket CRLFData] withTimeout:READ_TIMEOUT tag:0];
+    
+    [connectedSocketsView reloadData];
+
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag
@@ -300,8 +316,86 @@
 		{
 			[connectedSockets removeObject:sock];
 		}
+        
+        [connectedSocketsView reloadData];
 	}
 }
+
+
+
+/* Number of separate sections in table */
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+
+/* Calculates the height of the text (i.e. the amount of lines it takes to fill the text) */
+-(float) calculateHeightOfText:(NSString*)txt usingFont:(UIFont*)font boxWidth:(float)width lineBreak:(UILineBreakMode)lineBreakMode {
+	CGSize suggestedSize = [txt sizeWithFont:font constrainedToSize:CGSizeMake(width, FLT_MAX) lineBreakMode:lineBreakMode];
+	return suggestedSize.height;
+}
+
+-(UITableViewCell*) createCellNonInteractable:(NSString*)s {
+    
+	UITableViewCell *cell = [self.connectedDevicesView dequeueReusableCellWithIdentifier:nil];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil] ;
+        cell.userInteractionEnabled = NO;
+        
+        UILabel *desc = [[UILabel alloc] initWithFrame:CGRectMake(2,2,310.0, 60)] ;
+        // desc.font = 12;
+        desc.textColor = [UIColor whiteColor];
+        desc.backgroundColor = [UIColor clearColor];
+        desc.textAlignment = NSTextAlignmentLeft;
+        desc.numberOfLines = 1;
+        desc.text = s;
+        [cell.contentView addSubview:desc];
+        // [cell.contentView sizeToFit];
+    }
+    
+	return cell;
+}
+
+/* Returns row height */
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    const int kStandardRowHeight = 60.0;
+    return kStandardRowHeight;
+}
+
+/* Sets up background color for a single cell */
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    cell.backgroundColor =[UIColor clearColor];
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    // [tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+   //    [self.connectedDevicesView:tableView didSelectRowAtIndexPath:indexPath];
+}
+
+/* Creates cell for a single row */
+-(UITableViewCell *) tableView:(UITableView *)tabView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSUInteger row = indexPath.row;
+    
+    NSObject *obj = [connectedSockets objectAtIndex:row];
+    if ([obj isKindOfClass:[GCDAsyncSocket class]]) {
+        GCDAsyncSocket *v = (GCDAsyncSocket*)obj;
+        NSString *host = [v connectedHost];
+        UInt16 port = [v connectedPort];
+
+        NSString *text = [[[@"IP: " stringByAppendingString:host] stringByAppendingString:@", Port: "] stringByAppendingString:[NSString stringWithFormat:@"%d",port]];
+        return [self createCellNonInteractable:text];
+    }
+    return nil;
+}
+
+/* Number of rows per section */
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [connectedSockets count];
+    
+}
+
 
 
 @end

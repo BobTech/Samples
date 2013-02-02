@@ -9,16 +9,18 @@
 @class GCDAsyncSocket;
 
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
 	dispatch_queue_t socketQueue;
 	
 	GCDAsyncSocket *listenSocket;
 	NSMutableArray *connectedSockets;
+    IBOutlet UIScrollView *scrollView;
 	
 	BOOL isRunning;
     IBOutlet UILabel *ipAddress;
 	
+    IBOutlet UITableView *connectedSocketsView;
     IBOutlet UITextView *logView;
     IBOutlet UIButton *startStopButton;
 }
