@@ -63,7 +63,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	NSString *ipAddress = [_ipAddress text];
     NSLog(@"server IP address: %@", ipAddress );
 
-    if(![asyncSocket isDisconnected]){
+  //  if(![asyncSocket isDisconnected]){
         if (![asyncSocket connectToHost:ipAddress onPort:port error:&error])
         {
             DDLogError(@"Unable to connect to due to invalid configuration: %@", error);
@@ -74,7 +74,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
           //  [asyncSocket startTLS:nil];
 
         }
-    }
+ //   }
 }
 - (IBAction)sendMessage:(id)sender {
  //   BOOL connected = [asyncSocket isDisconnected];
