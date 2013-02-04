@@ -34,7 +34,7 @@
 	
 	CFReadStreamRef readStream;
 	CFWriteStreamRef writeStream;
-	CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)@"192.168.1.77", 1234, &readStream, &writeStream);
+	CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)@"192.168.1.77", 57362, &readStream, &writeStream);
 	
 	inputStream = (NSInputStream *)readStream;
 	outputStream = (NSOutputStream *)writeStream;
