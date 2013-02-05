@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[BaseView refresh]:BaseView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BaseView initWithFrame:]:BaseView.m">
+      </ContextState>
+      <ContextState
+         contextName = "__27-[BaseView dismissSubview:]_block_invoke_0109:BaseView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "naviBar">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[FirstViewController showLoginView]:FirstViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData].parentViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BaseView dismissSubview:]:BaseView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData].parentViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDataManager setupData]:AppDataManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "__27-[BaseView dismissSubview:]_block_invoke_072:BaseView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData].parentViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BaseView createMemberDetailsNewSubView:]:BaseView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MemberDataParser parseData:]:MemberDataParser.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "kMemberEntry">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[FirstViewController showMembersListView]:FirstViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MonthlyListViewGroup setMonthDataToArray:andYear:andMonth:andAmmount:andPerson:]:MonthlyListViewGroup.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "membersInMonth">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BaseView setBackArrowTitle]:BaseView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PartnershipTypeViewGroup tableView:numberOfRowsInSection:]:PartnershipTypeViewGroup.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData].appData.partnersList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MembersListView createTableViewCell:]:MembersListView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BaseView createNewSubView:]:BaseView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData].parentViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MembersListView createDummyData]:MembersListView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FirstViewController updateData]:FirstViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData].appData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MemberDetailsView initWithFrame:andPersonData:]:MemberDetailsView.m">
+      </ContextState>
+      <ContextState
+         contextName = "__27-[BaseView dismissSubview:]_block_invoke_0172:BaseView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MonthlyListViewGroup tableView:cellForRowAtIndexPath:]:MonthlyListViewGroup.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[YearlyPartnership setupData]:YearlyPartnership.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[TableViewCellCreator createTableViewCellWithInputField:fieldDefault:fieldText:table:delle:textfieldId:secure:]:TableViewCellCreator.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "fieldText">
+            </PersistentString>
+            <PersistentString
+               value = "infoText">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MonthlyListViewGroup setupMembersByMonth]:MonthlyListViewGroup.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
