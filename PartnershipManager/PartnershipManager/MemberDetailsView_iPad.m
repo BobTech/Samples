@@ -31,18 +31,13 @@
 
 /* Initializes navigation bar */
 -(void) initializeNavigationBarWith:(NSString*)aTitle {
-    /* if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
-     {
-     realFrame.size.width = 360;
-     realFrame.size.height = 520;
-     }*/
-    
-    [self setBackArrowTitle];
+        
+    //[self setBackArrowTitle];
     
     naviBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 44)];
     naviBar.barStyle = UIBarStyleBlack;
     
-    UINavigationItem *navItem = [[[UINavigationItem alloc] initWithTitle:aTitle] autorelease];
+    navItem = [[[UINavigationItem alloc] initWithTitle:aTitle] autorelease];
     
     navItem.leftBarButtonItem = nil;
     navItem.backBarButtonItem = nil;
@@ -51,22 +46,6 @@
     
     naviBar.items = [NSArray arrayWithObject:navItem];
     
-  /*  UIButton *leftNaviButton = [UIButton buttonWithType:101];
-    
-    CGRect naviFrame = leftNaviButton.frame;
-	naviFrame.origin.x = naviBar.frame.origin.x + 5;
-	naviFrame.origin.y = (naviBar.frame.size.height-naviFrame.size.height)/2 + naviBar.frame.origin.y;
-	leftNaviButton.frame = naviFrame;
-    [leftNaviButton setTitle:self.backArrowTitle forState:UIControlStateNormal];
-    [leftNaviButton setBackgroundImage:[UIImage imageNamed:@"backbutton_blue.png"] forState:UIControlStateNormal];
-    [leftNaviButton addTarget:self action:@selector(dismissSubview:) forControlEvents:UIControlEventTouchUpInside];
-    //[leftNaviButton.titleLabel setLineBreakMode:NSLineBreakByTruncatingTail];
-    
-    UIBarButtonItem *backBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:leftNaviButton] autorelease];
-    // backBarButtonItem.width = 60;
-    
-    [navItem setLeftBarButtonItem:backBarButtonItem animated:YES];
-   */ 
     [self addSubview:naviBar];
 }
 
@@ -75,6 +54,9 @@
 
     personData = aData;
     [tableView reloadData];
+    
+    title = [[personData.name stringByAppendingString:@" "] stringByAppendingString:personData.surName];
+    [navItem setTitle:title];
 }
 
 

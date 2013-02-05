@@ -14,6 +14,8 @@
 
 @interface MemberDetailsView_iPad : BaseView {
     PersonData* personData;
+    
+    UINavigationItem *navItem;
 }
 
 /*Methods declaration*/

@@ -53,7 +53,7 @@
 }
 
 - (void)initializeView {
-    
+    self.view.backgroundColor = [UIColor blackColor];
     naviBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
     naviBar.barStyle = UIBarStyleBlack;
     // self.navigationItem.leftBarButtonItem;
