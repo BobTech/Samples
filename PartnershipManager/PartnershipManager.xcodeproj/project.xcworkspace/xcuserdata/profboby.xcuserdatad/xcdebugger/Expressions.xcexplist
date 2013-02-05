@@ -3,6 +3,9 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[MemberDetailsView_iPad tableView:cellForRowAtIndexPath:]:MemberDetailsView_iPad.m">
+      </ContextState>
+      <ContextState
          contextName = "-[FirstViewController_iPad showLoginView]:FirstViewController_iPad.m">
          <PersistentStrings>
             <PersistentString
@@ -15,6 +18,14 @@
       </ContextState>
       <ContextState
          contextName = "-[BaseView refresh]:BaseView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MembersListView_iPad goToDetailsView:]:MembersListView_iPad.m">
          <PersistentStrings>
             <PersistentString
                value = "[ApplicationData sharedApplicationData]">
@@ -71,15 +82,15 @@
          contextName = "-[BaseView createMemberDetailsNewSubView:]:BaseView.m">
       </ContextState>
       <ContextState
+         contextName = "-[BaseView setBackArrowTitle]:BaseView.m">
+      </ContextState>
+      <ContextState
          contextName = "-[MemberDataParser parseData:]:MemberDataParser.m">
          <PersistentStrings>
             <PersistentString
                value = "kMemberEntry">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[FirstViewController showMembersListView]:FirstViewController.m">
       </ContextState>
       <ContextState
          contextName = "-[MonthlyListViewGroup setMonthDataToArray:andYear:andMonth:andAmmount:andPerson:]:MonthlyListViewGroup.m">
@@ -90,7 +101,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[BaseView setBackArrowTitle]:BaseView.m">
+         contextName = "-[FirstViewController showMembersListView]:FirstViewController.m">
       </ContextState>
       <ContextState
          contextName = "-[PartnershipTypeViewGroup tableView:numberOfRowsInSection:]:PartnershipTypeViewGroup.m">

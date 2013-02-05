@@ -59,7 +59,7 @@
     // self.navigationItem.leftBarButtonItem;
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [ApplicationData sharedApplicationData].parentViewController = (BaseViewController*)self;
+    [ApplicationData sharedApplicationData].parentViewController = self;
     [ApplicationData sharedApplicationData].PartnershipTypeArrays = [[NSMutableArray alloc] init];
     [ApplicationData sharedApplicationData].appData = [[AppDataManager alloc] init] ;
     
@@ -99,8 +99,8 @@
     
     [super viewDidAppear:animated];
     
-    [ApplicationData sharedApplicationData].parentViewController = (BaseViewController*)self;
-    [ApplicationData sharedApplicationData].PartnershipTypeArrays = [[NSMutableArray alloc] init];
+  //  [ApplicationData sharedApplicationData].parentViewController = (BaseViewController*)self;
+  //  [ApplicationData sharedApplicationData].PartnershipTypeArrays = [[NSMutableArray alloc] init];
     
 }
 
@@ -108,11 +108,25 @@
     
     membersView = nil;
     [membersView release];
-    membersView = [[MembersListView alloc] initWithFrame:CGRectMake(0, 0, self.leftView.frame.size.width, self.leftView.frame.size.height) andNaviBar:naviBar andApplicationData:[ApplicationData sharedApplicationData].appData ] ;
+    membersView = [[MembersListView_iPad alloc] initWithFrame:CGRectMake(0, 0, self.leftView.frame.size.width, self.leftView.frame.size.height) andNaviBar:naviBar andApplicationData:[ApplicationData sharedApplicationData].appData ] ;
     
     [self.leftView addSubview:membersView];
-    //[[ApplicationData sharedApplicationData].parentViewController.subViews addObject:membersView];
     
+    detailsView = nil;
+    [detailsView release];
+    detailsView = [[MemberDetailsView_iPad alloc] initWithFrame:CGRectMake(0, 0, self.rightView.frame.size.width, self.rightView.frame.size.height) andSubAreaData:nil andNaviBar:naviBar] ;
+    
+    [self.rightView addSubview:detailsView];
+    
+    [membersView selectFirstItem];
+   // [self gotoMembersDetailsView:[[ApplicationData sharedApplicationData].appData.membersList objectAtIndex:0]];
+    
+}
+
+
+- (void)gotoMembersDetailsView:(PersonData*)aData {
+    [detailsView setPersonsData:aData];
+
 }
 
 - (void)showLoginView {
@@ -125,7 +139,6 @@
     
     [[ApplicationData sharedApplicationData].parentViewController.subViews addObject:loginScren];
     // [self.subViews addObject:loginScren];
-    
 }
 
 

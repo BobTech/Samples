@@ -7,19 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MembersListView.h"
+#import "MembersListView_iPad.h"
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 #import "PersonData.h"
 #import "LoginScreen.h"
 #import "AppDataManager.h"
+#import "BaseViewController.h"
+#import "MemberDetailsView_iPad.h"
 
 
-@interface FirstViewController_iPad : UIViewController <MFMailComposeViewControllerDelegate,
-MFMessageComposeViewControllerDelegate, UINavigationControllerDelegate> {
+@interface FirstViewController_iPad : BaseViewController < MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate, UINavigationControllerDelegate> {
     
-    MembersListView *membersView;
-    NSMutableArray *subViews;
+    MembersListView_iPad *membersView;
+  
+    MemberDetailsView_iPad *detailsView;
     
     LoginScreen* loginScren;
     
@@ -27,7 +29,7 @@ MFMessageComposeViewControllerDelegate, UINavigationControllerDelegate> {
     
 }
 
-@property (nonatomic, retain) NSMutableArray *subViews;
+//@property (nonatomic, retain) NSMutableArray *subViews;
 
 -(void)showMailPicker:(NSMutableArray*)aPersons;
 -(void)showSMSPicker:(NSMutableArray*)aPersons;
@@ -38,6 +40,8 @@ MFMessageComposeViewControllerDelegate, UINavigationControllerDelegate> {
 //- (void)updateData;
 
 - (void)enableTabbar ;
+- (void)gotoMembersDetailsView:(PersonData*)aData ;
+
 
 
 @property (retain, nonatomic) IBOutlet UIView *leftView;
