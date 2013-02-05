@@ -3,6 +3,17 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[FirstViewController_iPad showLoginView]:FirstViewController_iPad.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData].parentViewController">
+            </PersistentString>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData].parentViewController.subViews">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[BaseView refresh]:BaseView.m">
          <PersistentStrings>
             <PersistentString
@@ -39,6 +50,14 @@
       </ContextState>
       <ContextState
          contextName = "-[AppDataManager setupData]:AppDataManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FirstViewController_iPad initializeView]:FirstViewController_iPad.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData]">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "__27-[BaseView dismissSubview:]_block_invoke_072:BaseView.m">

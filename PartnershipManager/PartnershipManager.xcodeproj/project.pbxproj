@@ -42,6 +42,8 @@
 		1B6C6FF3167F239F009B4798 /* BaseViewGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C6FF2167F239F009B4798 /* BaseViewGroup.m */; };
 		1B6C6FF6167F2BA4009B4798 /* MonthlyListViewGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C6FF5167F2BA3009B4798 /* MonthlyListViewGroup.m */; };
 		1BA1D5281678D5100078E834 /* PartnershipDetailsViewGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA1D5271678D50F0078E834 /* PartnershipDetailsViewGroup.m */; };
+		1BAE4C7C16C0F73F0012352D /* FirstViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE4C7B16C0F73F0012352D /* FirstViewController_iPad.m */; };
+		1BAE4C7F16C104400012352D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE4C7E16C104400012352D /* BaseViewController.m */; };
 		1BC1C37616852E9500E87257 /* MonthPartnerGroupData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C37516852E9500E87257 /* MonthPartnerGroupData.m */; };
 		1BC1C37A1685514600E87257 /* MembersListGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C3791685514600E87257 /* MembersListGroupView.m */; };
 		1BC1C37C1685D6EF00E87257 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1C37B1685D6EF00E87257 /* Icon.png */; };
@@ -155,6 +157,10 @@
 		1B6C6FF5167F2BA3009B4798 /* MonthlyListViewGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthlyListViewGroup.m; sourceTree = "<group>"; };
 		1BA1D5261678D50F0078E834 /* PartnershipDetailsViewGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartnershipDetailsViewGroup.h; sourceTree = "<group>"; };
 		1BA1D5271678D50F0078E834 /* PartnershipDetailsViewGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartnershipDetailsViewGroup.m; sourceTree = "<group>"; };
+		1BAE4C7A16C0F73F0012352D /* FirstViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController_iPad.h; path = PartnershipManager/FirstViewController_iPad.h; sourceTree = "<group>"; };
+		1BAE4C7B16C0F73F0012352D /* FirstViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController_iPad.m; path = PartnershipManager/FirstViewController_iPad.m; sourceTree = "<group>"; };
+		1BAE4C7D16C104400012352D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = PartnershipManager/BaseViewController.h; sourceTree = "<group>"; };
+		1BAE4C7E16C104400012352D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = PartnershipManager/BaseViewController.m; sourceTree = "<group>"; };
 		1BC1C37416852E9500E87257 /* MonthPartnerGroupData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthPartnerGroupData.h; sourceTree = "<group>"; };
 		1BC1C37516852E9500E87257 /* MonthPartnerGroupData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthPartnerGroupData.m; sourceTree = "<group>"; };
 		1BC1C3781685514600E87257 /* MembersListGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersListGroupView.h; sourceTree = "<group>"; };
@@ -279,6 +285,10 @@
 		1B69D273166D006C00BF21BC = {
 			isa = PBXGroup;
 			children = (
+				1BAE4C7D16C104400012352D /* BaseViewController.h */,
+				1BAE4C7E16C104400012352D /* BaseViewController.m */,
+				1BAE4C7A16C0F73F0012352D /* FirstViewController_iPad.h */,
+				1BAE4C7B16C0F73F0012352D /* FirstViewController_iPad.m */,
 				1BC1C42D1691F63500E87257 /* libxml2.dylib */,
 				1BC1C42B1691F54000E87257 /* MobileCoreServices.framework */,
 				1BC1C3B31691F51100E87257 /* Classes */,
@@ -652,6 +662,8 @@
 				1BC1C40B1691F51600E87257 /* ASIHTTPRequest.m in Sources */,
 				1BC1C40C1691F51600E87257 /* ASIInputStream.m in Sources */,
 				1BC1C40D1691F51600E87257 /* ASINetworkQueue.m in Sources */,
+				1BAE4C7C16C0F73F0012352D /* FirstViewController_iPad.m in Sources */,
+				1BAE4C7F16C104400012352D /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

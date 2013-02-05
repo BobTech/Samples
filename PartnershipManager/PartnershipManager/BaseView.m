@@ -20,6 +20,7 @@
 #import "PartnershipDetails.h"
 #import "PartnershipDetailsViewGroup.h"
 #import "WebViewScreen.h"
+#include "MembersListView.h"
 
 
 @implementation BaseView

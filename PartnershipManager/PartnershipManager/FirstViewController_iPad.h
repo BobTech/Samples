@@ -1,9 +1,9 @@
 //
-//  FirstViewController.h
+//  FirstViewController_iPad.h
 //  PartnershipManager
 //
-//  Created by Bob Emmanuel Esebamen on 12/3/12.
-//  Copyright (c) 2012 Bob Emmanuel Esebamen. All rights reserved.
+//  Created by Bob Emmanuel Esebamen on 2/5/13.
+//  Copyright (c) 2013 Bob Emmanuel Esebamen. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -13,23 +13,21 @@
 #import "PersonData.h"
 #import "LoginScreen.h"
 #import "AppDataManager.h"
-#import "SystemInitManager.h"
-#include "BaseViewController.h"
 
 
-@interface FirstViewController : BaseViewController<MFMailComposeViewControllerDelegate,
+@interface FirstViewController_iPad : UIViewController <MFMailComposeViewControllerDelegate,
 MFMessageComposeViewControllerDelegate, UINavigationControllerDelegate> {
-   
+    
     MembersListView *membersView;
- //   NSMutableArray *subViews;
-
+    NSMutableArray *subViews;
+    
     LoginScreen* loginScren;
     
     UINavigationBar* naviBar;
     
 }
 
-//@property (nonatomic, retain) NSMutableArray *subViews;
+@property (nonatomic, retain) NSMutableArray *subViews;
 
 -(void)showMailPicker:(NSMutableArray*)aPersons;
 -(void)showSMSPicker:(NSMutableArray*)aPersons;
@@ -41,5 +39,9 @@ MFMessageComposeViewControllerDelegate, UINavigationControllerDelegate> {
 
 - (void)enableTabbar ;
 
+
+@property (retain, nonatomic) IBOutlet UIView *leftView;
+
+@property (retain, nonatomic) IBOutlet UIView *rightView;
 
 @end

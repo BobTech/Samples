@@ -22,6 +22,7 @@
 #import "PartnershipDetailsViewGroup.h"
 #import "MonthPartnerGroupData.h"
 #import "MembersListGroupView.h"
+#import "MembersListView.h"
 
 @implementation BaseViewGroup
 
@@ -350,7 +351,7 @@ static const double kChangeViewAnimationLength = 0.3;
 }
 
 - (void)createMemberDetailsNewSubView:(NSObject*)obj {
-    if ([obj isKindOfClass:[PartnershipMembersList class]]) {
+   if ([obj isKindOfClass:[PartnershipMembersList class]]) {
         MembersListView *v = [[MembersListView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) andNaviBar:naviBar andGroupMembersData:(PartnershipMembersList*) obj ] ;
         
         v.center = CGPointMake(self.center.x + self.frame.size.width, v.center.y);
@@ -367,7 +368,7 @@ static const double kChangeViewAnimationLength = 0.3;
         [[ApplicationData sharedApplicationData].parentViewController.subViews addObject:v];
         [UIView animateWithDuration:.25 animations:^{ v.center = CGPointMake(self.center.x, v.center.y); } completion:^(BOOL finished) {}];
     }
-    
+   
 }
 
 -(UITableViewCell*) createCellNonInteractable:(NSString*)s {

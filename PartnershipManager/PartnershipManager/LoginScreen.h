@@ -8,7 +8,7 @@
 #import "BaseView.h"
 
 @class LoginData;
-@class FirstViewController;
+@class BaseViewController;
 
 
 /* Login screen to enter the URHOtv credentials */
@@ -23,7 +23,7 @@
     
   //  WaitScreen *loginWaitScreen;
     
-    FirstViewController * parentView ;
+    BaseViewController * parentView ;
 }
 
 /* Property declarations */
@@ -31,11 +31,11 @@
 @property (nonatomic, retain) UILabel *informationText;
 @property (nonatomic, copy) NSString *userNameText;
 @property (nonatomic, copy) NSString *passWText;
-@property (nonatomic, retain) FirstViewController * parentView;
+@property (nonatomic, retain) BaseViewController * parentView;
 
 /* Method declarations */
 
-- (id)initWithFrameLogin:(CGRect)frame parent:(FirstViewController*)aParentView sourceData:(LoginData*)loginData;
+- (id)initWithFrameLogin:(CGRect)frame parent:(BaseViewController*)aParentView sourceData:(LoginData*)loginData;
 - (void)launchLoginWithUserName:(NSObject*)obj ;
 
 

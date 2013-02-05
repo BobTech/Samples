@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FirstViewController.h"
+#import "BaseViewController.h"
+#include "AppDataManager.h"
 
 @interface ApplicationData : NSObject{
-    FirstViewController* parentViewController;
+    BaseViewController* parentViewController;
     NSMutableArray *subViews;
   
     NSMutableArray *PartnershipTypeArrays;
@@ -23,7 +24,7 @@
 /* Singleton method */
 +(ApplicationData*) sharedApplicationData;
 
-@property (nonatomic, retain) FirstViewController* parentViewController;
+@property (nonatomic, retain) BaseViewController* parentViewController;
 @property (nonatomic, retain) NSMutableArray *subViews;
 @property (nonatomic, retain) NSMutableArray *PartnershipTypeArrays;
 

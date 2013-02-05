@@ -15,7 +15,7 @@
 @end
 
 @implementation FirstViewController
-@synthesize subViews;
+//@synthesize subViews;
 
 - (void)viewDidLoad
 {

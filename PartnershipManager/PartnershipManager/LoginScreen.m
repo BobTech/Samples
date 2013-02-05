@@ -12,7 +12,7 @@
 #import "LoginManager.h"
 #import "Strings.h"
 #import "ModelConstants.h"
-#import "FirstViewController.h"
+#import "BaseViewController.h"
 
 enum {
 	kUsername = 1000,
@@ -28,7 +28,7 @@ enum {
 @synthesize parentView;
 
 /* Constructor */
-- (id)initWithFrameLogin:(CGRect)frame parent:(FirstViewController*)aParentView sourceData:(LoginData*)loginData {
+- (id)initWithFrameLogin:(CGRect)frame parent:(BaseViewController*)aParentView sourceData:(LoginData*)loginData {
 		
     if ((self = [super initWithFrame:frame andNaviBar:nil])) {
         
@@ -170,7 +170,18 @@ enum {
         
         UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:kLoginSuccessDialogHeader message:kLoginSuccessDialogText delegate:nil cancelButtonTitle:kLoginSuccessDialogButtonText otherButtonTitles:nil];
 		[alertView show];
-        [super dismissSubview:nil];
+        if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad) //iPad
+        {
+             [self removeFromSuperview];
+        }
+        else//iphone
+        {
+             [super dismissSubview:nil];
+
+        }
+
+      //  [super dismissSubview:nil];
+        [self removeFromSuperview];
         [parentView enableTabbar];
         [parentView showMembersListView];
         
