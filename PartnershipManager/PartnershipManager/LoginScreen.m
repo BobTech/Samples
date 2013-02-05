@@ -68,7 +68,9 @@ enum {
 		informationText.text = kLoginScreenInfoText;
 		informationText.numberOfLines = 6;
 			
+     //   self.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default.png"]];
         self.backgroundColor = [UIColor blackColor];
+        
 		tableView = [[UITableView alloc] initWithFrame:realFrame style:UITableViewStyleGrouped];
         tableView.center = self.center;
 		tableView.delegate = self;

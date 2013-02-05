@@ -163,17 +163,20 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil] ;
-        //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
         
         
         UILabel *desc = [[UILabel alloc] initWithFrame:CGRectMake(2,2,310.0, 60)] ;
         desc.textColor = [UIColor whiteColor];
         desc.backgroundColor = [UIColor clearColor];
+        
         desc.textAlignment = NSTextAlignmentLeft;
         desc.numberOfLines = 1;
         desc.text = [[s.name stringByAppendingString:@" "] stringByAppendingString:s.surName];
         [cell.contentView addSubview:desc];
         [cell.contentView sizeToFit];
+        //cell.backgroundColor =[UIColor colorWithRed:0.2 green:0.0 blue:0.9 alpha:1.0];
+
     }
     
 	return cell;

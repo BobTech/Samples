@@ -50,7 +50,7 @@ const int kSearchBarHeight = 44;
         tableView.dataSource = self;
 
         // Create search bar
-		searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(kSearchBarPosX, kSearchBarPosY, kSearchBarWidth, kSearchBarHeight)];
+		searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(kSearchBarPosX, kSearchBarPosY, self.frame.size.width, kSearchBarHeight)];
 		searchBar.placeholder = @"Search Name, Surname or Cell";
 		searchBar.tintColor = [UIColor blackColor];
 		searchBar.delegate = self;

@@ -46,6 +46,7 @@
 		1BAE4C7F16C104400012352D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE4C7E16C104400012352D /* BaseViewController.m */; };
 		1BAE4C8216C1197A0012352D /* MembersListView_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE4C8116C119790012352D /* MembersListView_iPad.m */; };
 		1BAE4C8516C123E00012352D /* MemberDetailsView_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE4C8416C123E00012352D /* MemberDetailsView_iPad.m */; };
+		1BAE4C8816C1A31D0012352D /* SecondViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE4C8716C1A31C0012352D /* SecondViewController_iPad.m */; };
 		1BC1C37616852E9500E87257 /* MonthPartnerGroupData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C37516852E9500E87257 /* MonthPartnerGroupData.m */; };
 		1BC1C37A1685514600E87257 /* MembersListGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1C3791685514600E87257 /* MembersListGroupView.m */; };
 		1BC1C37C1685D6EF00E87257 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BC1C37B1685D6EF00E87257 /* Icon.png */; };
@@ -167,6 +168,8 @@
 		1BAE4C8116C119790012352D /* MembersListView_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MembersListView_iPad.m; path = PartnershipManager/MembersListView_iPad.m; sourceTree = "<group>"; };
 		1BAE4C8316C123DF0012352D /* MemberDetailsView_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemberDetailsView_iPad.h; path = PartnershipManager/MemberDetailsView_iPad.h; sourceTree = "<group>"; };
 		1BAE4C8416C123E00012352D /* MemberDetailsView_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemberDetailsView_iPad.m; path = PartnershipManager/MemberDetailsView_iPad.m; sourceTree = "<group>"; };
+		1BAE4C8616C1A31C0012352D /* SecondViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController_iPad.h; path = PartnershipManager/SecondViewController_iPad.h; sourceTree = "<group>"; };
+		1BAE4C8716C1A31C0012352D /* SecondViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController_iPad.m; path = PartnershipManager/SecondViewController_iPad.m; sourceTree = "<group>"; };
 		1BC1C37416852E9500E87257 /* MonthPartnerGroupData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthPartnerGroupData.h; sourceTree = "<group>"; };
 		1BC1C37516852E9500E87257 /* MonthPartnerGroupData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthPartnerGroupData.m; sourceTree = "<group>"; };
 		1BC1C3781685514600E87257 /* MembersListGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersListGroupView.h; sourceTree = "<group>"; };
@@ -291,6 +294,8 @@
 		1B69D273166D006C00BF21BC = {
 			isa = PBXGroup;
 			children = (
+				1BAE4C8616C1A31C0012352D /* SecondViewController_iPad.h */,
+				1BAE4C8716C1A31C0012352D /* SecondViewController_iPad.m */,
 				1BAE4C8316C123DF0012352D /* MemberDetailsView_iPad.h */,
 				1BAE4C8416C123E00012352D /* MemberDetailsView_iPad.m */,
 				1BAE4C8016C119790012352D /* MembersListView_iPad.h */,
@@ -676,6 +681,7 @@
 				1BAE4C7F16C104400012352D /* BaseViewController.m in Sources */,
 				1BAE4C8216C1197A0012352D /* MembersListView_iPad.m in Sources */,
 				1BAE4C8516C123E00012352D /* MemberDetailsView_iPad.m in Sources */,
+				1BAE4C8816C1A31D0012352D /* SecondViewController_iPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

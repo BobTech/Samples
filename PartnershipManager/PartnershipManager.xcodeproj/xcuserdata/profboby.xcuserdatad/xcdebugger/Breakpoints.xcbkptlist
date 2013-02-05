@@ -121,7 +121,7 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/MembersListView.m"
@@ -619,11 +619,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/LoginScreen.m"
-         timestampString = "381751165.098405"
+         timestampString = "381769057.619036"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "191"
-         endingLineNumber = "191"
+         startingLineNumber = "193"
+         endingLineNumber = "193"
          landmarkName = "-loginCompleted"
          landmarkType = "5">
       </FileBreakpoint>
@@ -658,11 +658,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/LoginScreen.m"
-         timestampString = "381751165.098405"
+         timestampString = "381769057.619036"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "222"
-         endingLineNumber = "222"
+         startingLineNumber = "224"
+         endingLineNumber = "224"
          landmarkName = "-launchLoginWithUserName:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -671,11 +671,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/LoginScreen.m"
-         timestampString = "381751165.098405"
+         timestampString = "381769057.619036"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "242"
-         endingLineNumber = "242"
+         startingLineNumber = "244"
+         endingLineNumber = "244"
          landmarkName = "-tableView:didSelectRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -684,11 +684,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/LoginScreen.m"
-         timestampString = "381751165.098405"
+         timestampString = "381769057.619036"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "202"
-         endingLineNumber = "202"
+         startingLineNumber = "204"
+         endingLineNumber = "204"
          landmarkName = "-launchLogin:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -697,11 +697,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/LoginScreen.m"
-         timestampString = "381691411.59061"
+         timestampString = "381769057.619036"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "171"
-         endingLineNumber = "171"
+         startingLineNumber = "173"
+         endingLineNumber = "173"
          landmarkName = "-loginCompleted"
          landmarkType = "5">
       </FileBreakpoint>
@@ -710,11 +710,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/LoginScreen.m"
-         timestampString = "381751165.098405"
+         timestampString = "381769057.619036"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "203"
-         endingLineNumber = "203"
+         startingLineNumber = "205"
+         endingLineNumber = "205"
          landmarkName = "-launchLogin:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1087,11 +1087,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/LoginScreen.m"
-         timestampString = "381691411.59061"
+         timestampString = "381769057.619036"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "129"
-         endingLineNumber = "129"
+         startingLineNumber = "131"
+         endingLineNumber = "131"
          landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2361,11 +2361,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/FirstViewController_iPad.m"
-         timestampString = "381746889.718819"
+         timestampString = "381773649.640678"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "22"
-         endingLineNumber = "22"
+         startingLineNumber = "23"
+         endingLineNumber = "23"
          landmarkName = "-initWithNibName:bundle:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2374,11 +2374,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/FirstViewController_iPad.m"
-         timestampString = "381746939.620466"
+         timestampString = "381773649.640678"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "32"
-         endingLineNumber = "32"
+         startingLineNumber = "33"
+         endingLineNumber = "33"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2387,11 +2387,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/FirstViewController_iPad.m"
-         timestampString = "381747002.086651"
+         timestampString = "381773795.194792"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "83"
-         endingLineNumber = "83"
+         startingLineNumber = "95"
+         endingLineNumber = "95"
          landmarkName = "-enableTabbar"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2400,11 +2400,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/FirstViewController_iPad.m"
-         timestampString = "381747007.45344"
+         timestampString = "381773795.194792"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "109"
-         endingLineNumber = "109"
+         startingLineNumber = "121"
+         endingLineNumber = "121"
          landmarkName = "-showMembersListView"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2426,11 +2426,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/FirstViewController_iPad.m"
-         timestampString = "381765791.336357"
+         timestampString = "381773795.194792"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "124"
-         endingLineNumber = "124"
+         startingLineNumber = "136"
+         endingLineNumber = "136"
          landmarkName = "-showMembersListView"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2465,11 +2465,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/FirstViewController_iPad.m"
-         timestampString = "381748497.407468"
+         timestampString = "381773649.640678"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "21"
-         endingLineNumber = "21"
+         startingLineNumber = "22"
+         endingLineNumber = "22"
          landmarkName = "-initWithNibName:bundle:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2491,11 +2491,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/FirstViewController_iPad.m"
-         timestampString = "381749726.494895"
+         timestampString = "381773795.194792"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "57"
-         endingLineNumber = "57"
+         startingLineNumber = "69"
+         endingLineNumber = "69"
          landmarkName = "-initializeView"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2504,11 +2504,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/FirstViewController_iPad.m"
-         timestampString = "381750749.319272"
+         timestampString = "381773795.194792"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "70"
-         endingLineNumber = "70"
+         startingLineNumber = "82"
+         endingLineNumber = "82"
          landmarkName = "-initializeView"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2517,11 +2517,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/FirstViewController_iPad.m"
-         timestampString = "381765791.336357"
+         timestampString = "381773795.194792"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "132"
-         endingLineNumber = "132"
+         startingLineNumber = "144"
+         endingLineNumber = "144"
          landmarkName = "-showLoginView"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2543,11 +2543,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/FirstViewController_iPad.m"
-         timestampString = "381753083.057116"
+         timestampString = "381773795.194792"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "56"
-         endingLineNumber = "56"
+         startingLineNumber = "68"
+         endingLineNumber = "68"
          landmarkName = "-initializeView"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2569,11 +2569,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/MemberDetailsView_iPad.m"
-         timestampString = "381767818.722008"
+         timestampString = "381774512.220475"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "55"
-         endingLineNumber = "55"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
          landmarkName = "-setPersonsData:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2582,20 +2582,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/MemberDetailsView_iPad.m"
-         timestampString = "381762529.998711"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "25"
-         endingLineNumber = "25"
-         landmarkName = "-initWithFrame:andSubAreaData:andNaviBar:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "PartnershipManager/MemberDetailsView_iPad.m"
-         timestampString = "381762531.412852"
+         timestampString = "381774512.220475"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "26"
@@ -2608,11 +2595,24 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/MemberDetailsView_iPad.m"
-         timestampString = "381767986.616694"
+         timestampString = "381774512.220475"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "70"
-         endingLineNumber = "70"
+         startingLineNumber = "27"
+         endingLineNumber = "27"
+         landmarkName = "-initWithFrame:andSubAreaData:andNaviBar:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "PartnershipManager/MemberDetailsView_iPad.m"
+         timestampString = "381774512.220475"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "71"
+         endingLineNumber = "71"
          landmarkName = "-tableView:numberOfRowsInSection:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2621,11 +2621,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "PartnershipManager/MemberDetailsView_iPad.m"
-         timestampString = "381767986.616694"
+         timestampString = "381774512.220475"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "84"
-         endingLineNumber = "84"
+         startingLineNumber = "85"
+         endingLineNumber = "85"
          landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2653,6 +2653,58 @@
          startingLineNumber = "123"
          endingLineNumber = "123"
          landmarkName = "-tableView:didSelectRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "PartnershipManager/PartnershipTypeViewGroup.m"
+         timestampString = "381789863.263061"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "76"
+         endingLineNumber = "76"
+         landmarkName = "-initializeNavigationBarAndUpdateIcon:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "PartnershipManager/MembersListView_iPad.m"
+         timestampString = "381790542.287455"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "24"
+         endingLineNumber = "24"
+         landmarkName = "-initWithFrame:andNaviBar:andApplicationData:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "PartnershipManager/SecondViewController_iPad.m"
+         timestampString = "381790843.411254"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "36"
+         endingLineNumber = "36"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "PartnershipManager/SecondViewController_iPad.m"
+         timestampString = "381790973.842829"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "38"
+         endingLineNumber = "38"
+         landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

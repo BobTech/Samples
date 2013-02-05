@@ -22,6 +22,7 @@
         
         tableView.delegate = self;
         tableView.dataSource = self;
+        [tableView setBackgroundColor:[UIColor blackColor]];
     }
     title = [[personData.name stringByAppendingString:@" "] stringByAppendingString:personData.surName];
     [self initializeNavigationBarWith:title];
@@ -212,8 +213,46 @@
 
 -(CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 5.0;
+    if (section ==0) {
+        return 0;//130.0;
+    }
+    return 0;
+}
+/*
+- (UIView *) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    if (section == 0){
+        UIView *headerView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)] autorelease];
+        [headerView setBackgroundColor:[UIColor blackColor]];
+        return headerView;
+    } else
+      return nil;
+}
+/*
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    bool isSelected = cell.isSelected; // enter your own code here
+    if (isSelected)
+    {
+        [cell setBackgroundColor:[UIColor colorWithRed:1 green:1 blue:0.75 alpha:1]];
+        [cell setAccessibilityTraits:UIAccessibilityTraitSelected];
+    }
+    else
+    {
+        [cell setBackgroundColor:[UIColor clearColor]];
+        [cell setAccessibilityTraits:0];
+    }
 }
 
+/*
+- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *headerView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)] autorelease];
+    if (section == 1)
+        [headerView setBackgroundColor:[UIColor blackColor]];
+    else
+        [headerView setBackgroundColor:[UIColor blackColor]];
+    return headerView;
+}*/
 
 @end
