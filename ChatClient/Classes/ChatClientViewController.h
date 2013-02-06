@@ -21,7 +21,9 @@
 	NSMutableArray	*messages;
 	
 }
+@property (retain, nonatomic) IBOutlet UITextField *ipAddress;
 
+@property (retain, nonatomic) IBOutlet UITextField *port;
 
 @property (nonatomic, retain) IBOutlet UIView *joinView;
 @property (nonatomic, retain) IBOutlet UIView *chatView;

@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Classes/ChatClientViewController.m"
-         timestampString = "381492509.223421"
+         timestampString = "381825474.705338"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "125"
-         endingLineNumber = "125"
+         startingLineNumber = "136"
+         endingLineNumber = "136"
          landmarkName = "-messageReceived:"
          landmarkType = "5">
       </FileBreakpoint>

@@ -18,11 +18,17 @@
 
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-		
+    [super viewDidLoad];		
+	[self.ipAddress setText:@"192.168.1.70"];
+    [self.port setText:@"57362"];
+	inputNameField.text = @"Bob1";
+
+}
+
+- (void)setupConnection {
+    
 	[self initNetworkCommunication];
 	
-	inputNameField.text = @"cesare";
 	messages = [[NSMutableArray alloc] init];
 	
 	self.tView.delegate = self;
@@ -30,11 +36,14 @@
 	
 }
 
+
 - (void) initNetworkCommunication {
-	
+    NSString *ipAdd =self.ipAddress.text;
+    NSString *mPort =[self.port.text intValue];
+
 	CFReadStreamRef readStream;
 	CFWriteStreamRef writeStream;
-	CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)@"192.168.1.77", 57362, &readStream, &writeStream);
+	CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)ipAdd, mPort, &readStream, &writeStream);
 	
 	inputStream = (NSInputStream *)readStream;
 	outputStream = (NSOutputStream *)writeStream;
@@ -48,6 +57,8 @@
 }
 
 - (IBAction) joinChat {
+    [self setupConnection];
+
 
 	[self.view bringSubviewToFront:chatView];
 	NSString *response  = [NSString stringWithFormat:@"iam:%@", inputNameField.text];
@@ -184,6 +195,8 @@
 	[inputNameField release];
 	[inputMessageField release];
 	[tView release];
+    [_ipAddress release];
+    [_port release];
     [super dealloc];
 	
 }

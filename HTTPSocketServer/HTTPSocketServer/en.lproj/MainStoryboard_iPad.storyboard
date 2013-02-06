@@ -14,20 +14,11 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KJe-bY-bC2">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="CY1-BZ-oH9"/>
                                     <constraint firstAttribute="width" constant="166" id="Gi6-zD-x4e"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="start">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="17" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
                                     <action selector="startStop:" destination="2" eventType="touchUpInside" id="P5Z-ef-Wv9"/>
@@ -36,6 +27,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="57361" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uF6-Mw-hmx">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="173" id="NiO-6P-DAa"/>
+                                    <constraint firstAttribute="height" constant="30" id="wAw-Zl-4rf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -98,7 +90,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sh-RI-6Zo">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sh-RI-6Zo">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="l85-qD-Njc"/>
                                     <constraint firstAttribute="width" constant="186" id="rNu-2T-VXe"/>
@@ -120,7 +112,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ajj-kO-O6G" firstAttribute="top" secondItem="dm1-IO-Pab" secondAttribute="top" type="default" id="2NF-r6-19L"/>
-                            <constraint firstItem="KJe-bY-bC2" firstAttribute="top" secondItem="5" secondAttribute="top" constant="88" id="43e-1C-xb3"/>
+                            <constraint firstItem="uF6-Mw-hmx" firstAttribute="bottom" secondItem="KJe-bY-bC2" secondAttribute="bottom" type="default" id="401-Oc-xy8"/>
                             <constraint firstItem="Ajj-kO-O6G" firstAttribute="top" secondItem="uF6-Mw-hmx" secondAttribute="top" type="default" id="50L-1B-kXc"/>
                             <constraint firstItem="dm1-IO-Pab" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="A9d-aw-kJv"/>
                             <constraint firstItem="Gad-kD-E7h" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="8" id="BLD-3y-W5H"/>
@@ -132,6 +124,7 @@
                             <constraint firstItem="MiT-ac-Avt" firstAttribute="top" secondItem="5" secondAttribute="top" constant="23" id="TVL-N0-BR8"/>
                             <constraint firstAttribute="trailing" secondItem="uF6-Mw-hmx" secondAttribute="trailing" constant="201" id="TsX-qo-TkD"/>
                             <constraint firstItem="QKc-NP-nXb" firstAttribute="bottom" secondItem="Gad-kD-E7h" secondAttribute="bottom" type="default" id="hSe-7v-Qj1"/>
+                            <constraint firstItem="KJe-bY-bC2" firstAttribute="top" secondItem="uF6-Mw-hmx" secondAttribute="top" type="default" id="knD-Sd-59J"/>
                             <constraint firstItem="Ajj-kO-O6G" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="328" id="mkX-bC-aLW"/>
                             <constraint firstAttribute="trailing" secondItem="1sh-RI-6Zo" secondAttribute="trailing" constant="27" id="noh-gG-6VN"/>
                             <constraint firstItem="1sh-RI-6Zo" firstAttribute="top" secondItem="MiT-ac-Avt" secondAttribute="top" type="default" id="qCr-QX-FX4"/>
@@ -147,7 +140,6 @@
                         <outlet property="logView" destination="rQ5-O0-uIa" id="Ray-Lc-iok"/>
                         <outlet property="port" destination="uF6-Mw-hmx" id="Qd6-hH-Ixk"/>
                         <outlet property="scrollView" destination="QKc-NP-nXb" id="n5f-Zw-s4y"/>
-                        <outlet property="startStopButton" destination="KJe-bY-bC2" id="apc-lf-JPx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>

@@ -130,9 +130,11 @@
 		isRunning = YES;
 		
 		[self.port setEnabled:NO];
-		[startStopButton setTitle:@"Stop" forState:UIControlStateNormal];
+		//[self.startButton setTitle:@"Stop" forState:UIControlStateNormal];
         
-         
+        UIButton *button = (UIButton*) sender;
+        [sender setTitle:@"Stop" forState:UIControlStateNormal];
+
 	}
 	else
 	{
@@ -156,8 +158,8 @@
 		isRunning = false;
 		
 		[self.port setEnabled:YES];
-		[startStopButton setTitle:@"Start" forState:UIControlStateNormal ];
-	}
+        UIButton *button = (UIButton*) sender;
+        [button setTitle:@"Start" forState:UIControlStateNormal];	}
 
 }
 
