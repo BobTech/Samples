@@ -20,9 +20,9 @@
 -(void) dealloc {
 /*	[loginId release];
 	[headerText release];
-	
+	*/
 	[super dealloc];
- */
+
 }
 
 @end

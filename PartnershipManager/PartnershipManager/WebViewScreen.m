@@ -1,9 +1,6 @@
 //
 //  WebViewScreen.m
-//  UrhoTV
 //
-//  Created by Lassi Maksimainen on 19.7.2010.
-//  Copyright 2010 ThirdPresence. All rights reserved.
 //
 
 #import "BaseView.h"

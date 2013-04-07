@@ -6,9 +6,6 @@
 #import "ASIFormDataRequest.h"
 
 #define kSignIn @"http://partner.jr-dev.com/login.php?Action=Login"
-//  NSString *str = @"http://192.168.1.77:8888/home/phpsocket.php";
-
-//#define kClientUserAgent @"Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) UrhoTVClient"
 
 @implementation LoginManager
 
@@ -72,35 +69,6 @@
    // return 0;
     return 1; //todo:remove when server login is complete
 }
-/*
-- (void) requestFinished:(ASIHTTPRequest *)request {
-    if ([request responseStatusCode] == 200) {
-        NSURLResponse *response;
-        NSData *data = [NSURLConnection sendSynchronousRequest:(NSMutableURLRequest*)request returningResponse:&response error:nil];
-        NSString *subscribeString = [[NSString alloc] initWithData:data encoding:NSISOLatin1StringEncoding];
-        
-        DebugLog(@"Signin return: %@", subscribeString);
-        
-        NSArray *list = [subscribeString componentsSeparatedByString:@"|"];
-        
-        if (list != nil && [list count] == 3 && [[[list objectAtIndex:0] substringToIndex:2] isEqualToString:@"OK"] && [[[list objectAtIndex:1] substringToIndex:1] isEqualToString:@"1"]) {
-            UserDataManager *userDataManager = [UserDataManager instance];
-            userDataManager.userAuthenticated = YES;
-            userDataManager.thirdPresenceServerToken = [[list objectAtIndex:2] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            
-            if (userDataManager.thirdPresenceServerToken != nil && userDataManager.apsPushToken != nil) {
-                [[HTTPEventSender sharedHTTPEventSender] sendEvent:[NSString stringWithFormat:@"http://urhotvclient.thirdpresence.com/xml/front?Action=subscribePushService&username=%@&id=%@",userDataManager.thirdPresenceServerToken, userDataManager.apsPushToken]];
-            }
-            
-            DebugLog(@"Login to UrhoTV succeeded");
-            return YES;
-        } else {
-            DebugLog(@"Login to UrhoTV failed");
-            return NO;
-        }
-    }
-}*/
-
 
 
 @end

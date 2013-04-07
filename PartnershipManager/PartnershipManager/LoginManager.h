@@ -4,7 +4,7 @@
 //#import "AppDataManager.h"
 #import "UserDataManager.h"
 
-/* Login manager to handle URHOtv system login*/
+/* Login manager to handle system */
 @interface LoginManager : NSObject {
 	//AppDataManager *appData;
     

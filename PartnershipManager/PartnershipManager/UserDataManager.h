@@ -14,7 +14,7 @@
 	bool userAuthenticated;
 	
 	NSString *userName;
-    NSString *thirdPresenceServerToken;
+    NSString *serverToken;
     NSString *apsPushToken;
 	NSString *password;
     NSString *userIdHash;
@@ -27,7 +27,7 @@
 @property (nonatomic, copy) NSString *userName;
 @property (nonatomic, copy) NSString *password;
 @property (nonatomic, copy) NSString *userIdHash;
-@property (nonatomic, copy) NSString *thirdPresenceServerToken;
+@property (nonatomic, copy) NSString *serverToken;
 @property (nonatomic, copy) NSString *apsPushToken;
 
 /* Singleton fetcher */

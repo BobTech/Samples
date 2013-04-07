@@ -6,14 +6,14 @@
 
 static UserDataManager *userDataInstance = nil;
 
-#define kDataFilename @"urhotv.dat"
+#define kDataFilename @"bob.dat"
 
 @implementation UserDataManager
 
 @synthesize dataSet, userAuthenticated;
 @synthesize userName, password;
 @synthesize userIdHash;
-@synthesize thirdPresenceServerToken, apsPushToken;
+@synthesize serverToken, apsPushToken;
 
 /* Calculate MD5 hash of UDID */
 NSString* md5() {
@@ -35,7 +35,7 @@ NSString* md5() {
 	}
     
     self.userIdHash = md5();
-    self.thirdPresenceServerToken = nil;
+    self.serverToken = nil;
     self.apsPushToken = nil;
 	
 	return self;
@@ -44,7 +44,7 @@ NSString* md5() {
 /* Destructor *
 -(void) dealloc {
 	self.userIdHash = nil;
-    self.thirdPresenceServerToken = nil;
+    self.serverToken = nil;
     self.apsPushToken = nil;
     
     [dataSet release];

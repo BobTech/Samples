@@ -35,7 +35,7 @@
 #define kLoginPassword @"Password"
 #define kLoginButton @"Login"
 
-//#define kClientUserAgent @"Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) UrhoTVClient"
+//#define kClientUserAgent @"Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Client"
 
 
 #define kAppKey @""
