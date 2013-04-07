@@ -8,7 +8,6 @@
 #import <UIKit/UIKit.h>
 @class GCDAsyncSocket;
 
-
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
 	dispatch_queue_t socketQueue;

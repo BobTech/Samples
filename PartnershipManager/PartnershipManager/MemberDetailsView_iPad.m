@@ -32,9 +32,7 @@
 
 /* Initializes navigation bar */
 -(void) initializeNavigationBarWith:(NSString*)aTitle {
-        
-    //[self setBackArrowTitle];
-    
+            
     naviBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 44)];
     naviBar.barStyle = UIBarStyleBlack;
     
@@ -141,7 +139,7 @@
 
 -(UITableViewCell*) createPersonDetailsCellData:(NSString*)s {
     //    const float kCellHeight = 60.0;
-    static NSString *CellIdentifier = @"Cell";
+   // static NSString *CellIdentifier = @"Cell";
     
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:nil];
     
@@ -151,7 +149,6 @@
         cell.userInteractionEnabled = NO;
         
         UILabel *desc = [[UILabel alloc] initWithFrame:CGRectMake(2,2,310.0, 60)] ;
-        // desc.font = 12;
         desc.textColor = [UIColor whiteColor];
         desc.backgroundColor = [UIColor clearColor];
         desc.textAlignment = NSTextAlignmentLeft;
@@ -214,45 +211,9 @@
 -(CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section
 {
     if (section ==0) {
-        return 0;//130.0;
+        return 0;
     }
     return 0;
 }
-/*
-- (UIView *) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
-{
-    if (section == 0){
-        UIView *headerView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)] autorelease];
-        [headerView setBackgroundColor:[UIColor blackColor]];
-        return headerView;
-    } else
-      return nil;
-}
-/*
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    bool isSelected = cell.isSelected; // enter your own code here
-    if (isSelected)
-    {
-        [cell setBackgroundColor:[UIColor colorWithRed:1 green:1 blue:0.75 alpha:1]];
-        [cell setAccessibilityTraits:UIAccessibilityTraitSelected];
-    }
-    else
-    {
-        [cell setBackgroundColor:[UIColor clearColor]];
-        [cell setAccessibilityTraits:0];
-    }
-}
-
-/*
-- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    UIView *headerView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)] autorelease];
-    if (section == 1)
-        [headerView setBackgroundColor:[UIColor blackColor]];
-    else
-        [headerView setBackgroundColor:[UIColor blackColor]];
-    return headerView;
-}*/
 
 @end

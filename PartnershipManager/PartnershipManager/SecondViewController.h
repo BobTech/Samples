@@ -8,18 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "PartnershipTypeViewGroup.h"
-#import <MessageUI/MessageUI.h>
-#import <MessageUI/MFMailComposeViewController.h>
 #include "BaseViewController.h"
 
 
-@interface SecondViewController : BaseViewController <MFMailComposeViewControllerDelegate,
-MFMessageComposeViewControllerDelegate, UINavigationControllerDelegate> {
+@interface SecondViewController : BaseViewController {
     PartnershipTypeViewGroup *partnershipTypesGroupView;
-  //  NSMutableArray *subViews;
-
 }
-//@property (nonatomic, retain) NSMutableArray *subViews;
 
 
 @end

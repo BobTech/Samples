@@ -105,7 +105,6 @@
     //   [self aboutToDisappear];
     v.center = CGPointMake(self.center.x + self.frame.size.width, v.center.y);
     [[self superview] addSubview:v];
-    // [self addSubview:v];
     [[ApplicationData sharedApplicationData].parentViewController.subViews addObject:v];
     //    [self aboutToAppear];
     [UIView animateWithDuration:.25 animations:^{ v.center = CGPointMake(self.center.x, v.center.y); } completion:^(BOOL finished) {}];

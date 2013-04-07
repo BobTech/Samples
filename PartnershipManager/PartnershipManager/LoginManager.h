@@ -16,6 +16,6 @@
 
 //-(id) init:(AppDataManager*)appDataManager;
 -(bool) isUserLoginCached;
--(bool) signInToServiceWithUsername:(NSString*)uName andPassword:(NSString*)pWord;
+-(int) signInToServiceWithUsername:(NSString*)uName andPassword:(NSString*)pWord;
 
 @end

@@ -17,6 +17,8 @@
 		1B15A7A3168355FE00AC41B3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B15A7A2168355FD00AC41B3 /* CFNetwork.framework */; };
 		1B15A7A51683565500AC41B3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B15A7A41683565500AC41B3 /* SystemConfiguration.framework */; };
 		1B15A7A81683BCAE00AC41B3 /* WebViewScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B15A7A71683BCAC00AC41B3 /* WebViewScreen.m */; };
+		1B1C2B9516EDBD8C008254C9 /* MembersParserCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1C2B9416EDBD8C008254C9 /* MembersParserCSV.m */; };
+		1B1C2B9916EDC232008254C9 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1C2B9816EDC232008254C9 /* CHCSVParser.m */; };
 		1B69D283166D006C00BF21BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B69D282166D006C00BF21BC /* UIKit.framework */; };
 		1B69D285166D006C00BF21BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B69D284166D006C00BF21BC /* Foundation.framework */; };
 		1B69D287166D006C00BF21BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B69D286166D006C00BF21BC /* CoreGraphics.framework */; };
@@ -41,7 +43,10 @@
 		1B69D2C2166D006C00BF21BC /* PartnershipManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B69D2C1166D006C00BF21BC /* PartnershipManagerTests.m */; };
 		1B6C6FF3167F239F009B4798 /* BaseViewGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C6FF2167F239F009B4798 /* BaseViewGroup.m */; };
 		1B6C6FF6167F2BA4009B4798 /* MonthlyListViewGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C6FF5167F2BA3009B4798 /* MonthlyListViewGroup.m */; };
+		1B937DDB16F2784A008D8E67 /* LoginResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B937DDA16F2784A008D8E67 /* LoginResponseData.m */; };
 		1BA1D5281678D5100078E834 /* PartnershipDetailsViewGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA1D5271678D50F0078E834 /* PartnershipDetailsViewGroup.m */; };
+		1BA3140216ECBFEF00DA5342 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA3140116ECBFEF00DA5342 /* DropboxSDK.framework */; };
+		1BA3140416ECC01C00DA5342 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA3140316ECC01C00DA5342 /* Security.framework */; };
 		1BAE4C7C16C0F73F0012352D /* FirstViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE4C7B16C0F73F0012352D /* FirstViewController_iPad.m */; };
 		1BAE4C7F16C104400012352D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE4C7E16C104400012352D /* BaseViewController.m */; };
 		1BAE4C8216C1197A0012352D /* MembersListView_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE4C8116C119790012352D /* MembersListView_iPad.m */; };
@@ -124,6 +129,10 @@
 		1B15A7A41683565500AC41B3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1B15A7A61683BCAB00AC41B3 /* WebViewScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewScreen.h; sourceTree = "<group>"; };
 		1B15A7A71683BCAC00AC41B3 /* WebViewScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewScreen.m; sourceTree = "<group>"; };
+		1B1C2B9316EDBD8C008254C9 /* MembersParserCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MembersParserCSV.h; path = PartnershipManager/MembersParserCSV.h; sourceTree = "<group>"; };
+		1B1C2B9416EDBD8C008254C9 /* MembersParserCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MembersParserCSV.m; path = PartnershipManager/MembersParserCSV.m; sourceTree = "<group>"; };
+		1B1C2B9716EDC232008254C9 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		1B1C2B9816EDC232008254C9 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
 		1B69D27E166D006C00BF21BC /* PartnershipManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartnershipManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B69D282166D006C00BF21BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1B69D284166D006C00BF21BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -158,8 +167,12 @@
 		1B6C6FF2167F239F009B4798 /* BaseViewGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewGroup.m; sourceTree = "<group>"; };
 		1B6C6FF4167F2BA3009B4798 /* MonthlyListViewGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthlyListViewGroup.h; sourceTree = "<group>"; };
 		1B6C6FF5167F2BA3009B4798 /* MonthlyListViewGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthlyListViewGroup.m; sourceTree = "<group>"; };
+		1B937DD916F27849008D8E67 /* LoginResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResponseData.h; sourceTree = "<group>"; };
+		1B937DDA16F2784A008D8E67 /* LoginResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResponseData.m; sourceTree = "<group>"; };
 		1BA1D5261678D50F0078E834 /* PartnershipDetailsViewGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartnershipDetailsViewGroup.h; sourceTree = "<group>"; };
 		1BA1D5271678D50F0078E834 /* PartnershipDetailsViewGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartnershipDetailsViewGroup.m; sourceTree = "<group>"; };
+		1BA3140116ECBFEF00DA5342 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		1BA3140316ECC01C00DA5342 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1BAE4C7A16C0F73F0012352D /* FirstViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController_iPad.h; path = PartnershipManager/FirstViewController_iPad.h; sourceTree = "<group>"; };
 		1BAE4C7B16C0F73F0012352D /* FirstViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController_iPad.m; path = PartnershipManager/FirstViewController_iPad.m; sourceTree = "<group>"; };
 		1BAE4C7D16C104400012352D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = PartnershipManager/BaseViewController.h; sourceTree = "<group>"; };
@@ -265,16 +278,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE26D541680EFCA00F1A9DB /* QuartzCore.framework in Frameworks */,
+				1BA3140416ECC01C00DA5342 /* Security.framework in Frameworks */,
 				1BC1C42E1691F63700E87257 /* libxml2.dylib in Frameworks */,
 				1BC1C42C1691F54200E87257 /* MobileCoreServices.framework in Frameworks */,
 				1B15A7A51683565500AC41B3 /* SystemConfiguration.framework in Frameworks */,
 				1B15A7A3168355FE00AC41B3 /* CFNetwork.framework in Frameworks */,
 				1B15A79B1683252000AC41B3 /* libz.dylib in Frameworks */,
-				1BE26D541680EFCA00F1A9DB /* QuartzCore.framework in Frameworks */,
 				1BE9167F16711D7E00204677 /* MessageUI.framework in Frameworks */,
 				1B69D283166D006C00BF21BC /* UIKit.framework in Frameworks */,
 				1B69D285166D006C00BF21BC /* Foundation.framework in Frameworks */,
 				1B69D287166D006C00BF21BC /* CoreGraphics.framework in Frameworks */,
+				1BA3140216ECBFEF00DA5342 /* DropboxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,9 +306,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1C2B9616EDC232008254C9 /* CHCSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				1B1C2B9716EDC232008254C9 /* CHCSVParser.h */,
+				1B1C2B9816EDC232008254C9 /* CHCSVParser.m */,
+			);
+			name = CHCSVParser;
+			path = PartnershipManager/CHCSVParser;
+			sourceTree = "<group>";
+		};
 		1B69D273166D006C00BF21BC = {
 			isa = PBXGroup;
 			children = (
+				1B1C2B9616EDC232008254C9 /* CHCSVParser */,
+				1B1C2B9316EDBD8C008254C9 /* MembersParserCSV.h */,
+				1B1C2B9416EDBD8C008254C9 /* MembersParserCSV.m */,
+				1BA3140116ECBFEF00DA5342 /* DropboxSDK.framework */,
 				1BAE4C8616C1A31C0012352D /* SecondViewController_iPad.h */,
 				1BAE4C8716C1A31C0012352D /* SecondViewController_iPad.m */,
 				1BAE4C8316C123DF0012352D /* MemberDetailsView_iPad.h */,
@@ -332,6 +361,7 @@
 		1B69D281166D006C00BF21BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BA3140316ECC01C00DA5342 /* Security.framework */,
 				1B69D282166D006C00BF21BC /* UIKit.framework */,
 				1B69D284166D006C00BF21BC /* Foundation.framework */,
 				1B69D286166D006C00BF21BC /* CoreGraphics.framework */,
@@ -440,6 +470,8 @@
 				1BC1C3AC169175D600E87257 /* SettingsViewController.m */,
 				1BC1C3B01691B55200E87257 /* MoreInfoView.h */,
 				1BC1C3B11691B55600E87257 /* MoreInfoView.m */,
+				1B937DD916F27849008D8E67 /* LoginResponseData.h */,
+				1B937DDA16F2784A008D8E67 /* LoginResponseData.m */,
 			);
 			path = PartnershipManager;
 			sourceTree = "<group>";
@@ -682,6 +714,9 @@
 				1BAE4C8216C1197A0012352D /* MembersListView_iPad.m in Sources */,
 				1BAE4C8516C123E00012352D /* MemberDetailsView_iPad.m in Sources */,
 				1BAE4C8816C1A31D0012352D /* SecondViewController_iPad.m in Sources */,
+				1B1C2B9516EDBD8C008254C9 /* MembersParserCSV.m in Sources */,
+				1B1C2B9916EDC232008254C9 /* CHCSVParser.m in Sources */,
+				1B937DDB16F2784A008D8E67 /* LoginResponseData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,6 +830,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PartnershipManager/PartnershipManager-Prefix.pch";
 				INFOPLIST_FILE = "PartnershipManager/PartnershipManager-Info.plist";
@@ -809,6 +848,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PartnershipManager/PartnershipManager-Prefix.pch";
 				INFOPLIST_FILE = "PartnershipManager/PartnershipManager-Info.plist";

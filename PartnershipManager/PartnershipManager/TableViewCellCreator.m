@@ -1,9 +1,6 @@
 //
 //  TableViewCellCreator.m
-//  UrhoTV
 //
-//  Created by Lassi Maksimainen on 12.8.2010.
-//  Copyright 2010 ThirdPresence. All rights reserved.
 //
 
 #import "LoginData.h"

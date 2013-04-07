@@ -38,7 +38,6 @@ static const double kChangeViewAnimationLength = 0.3;
         self.backgroundColor = [UIColor clearColor];
         
         // Initialization code
-       // naviBar = bar;
 
         background = [[UIImageView alloc] initWithFrame:frame];
 
@@ -75,10 +74,7 @@ static const double kChangeViewAnimationLength = 0.3;
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
-        
-        // Initialization code
-       // naviBar = bar;
-        
+                
         background = [[UIImageView alloc] initWithFrame:frame];
         
         [background setBackgroundColor:[UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0]];
@@ -230,12 +226,21 @@ static const double kChangeViewAnimationLength = 0.3;
     if ([obj isKindOfClass:[PersonData class]]) {
         MemberSubDetailsView *v = [[[MemberSubDetailsView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) andSubAreaData:(PersonData*)obj andNaviBar:naviBar] autorelease];
 
-     //   [self aboutToDisappear];
         v.center = CGPointMake(self.center.x + self.frame.size.width, v.center.y);
         [[self superview] addSubview:v];
-       // [self addSubview:v];
         [[ApplicationData sharedApplicationData].parentViewController.subViews addObject:v];
-    //    [self aboutToAppear];
+        
+        /*Page curl animation
+        [UIView beginAnimations:@"Flip" context:nil];
+        [UIView setAnimationDuration:1.0];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+        //[UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self cache:YES];
+        [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self cache:YES];
+
+       // [user.view removeFromSuperview];
+        [[self superview] addSubview:v];
+        
+        [UIView commitAnimations];*/
         [UIView animateWithDuration:.25 animations:^{ v.center = CGPointMake(self.center.x, v.center.y); } completion:^(BOOL finished) {}];
     }else if ([obj isKindOfClass:[YearlyPartnershipData class]]) {
         MonthlyListView *v = [[[MonthlyListView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) andPartnershipList:(YearlyPartnershipData*)obj andNaviBar:naviBar] autorelease];

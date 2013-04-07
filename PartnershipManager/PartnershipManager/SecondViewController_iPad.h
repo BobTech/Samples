@@ -9,18 +9,13 @@
 #import <UIKit/UIKit.h>
 
 #import "PartnershipTypeViewGroup.h"
-#import <MessageUI/MessageUI.h>
-#import <MessageUI/MFMailComposeViewController.h>
 #include "BaseViewController.h"
 
-@interface SecondViewController_iPad : BaseViewController <MFMailComposeViewControllerDelegate,
-MFMessageComposeViewControllerDelegate, UINavigationControllerDelegate> {
+@interface SecondViewController_iPad : BaseViewController{
     PartnershipTypeViewGroup *partnershipTypesGroupView;
     
 }
-
-
-@property (retain, nonatomic) IBOutlet UIView *leftView;
+@property (retain, nonatomic) IBOutlet UIView *leftView1;
 @property (retain, nonatomic) IBOutlet UIView *rightView;
 
 @end

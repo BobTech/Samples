@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "SystemInitManager.h"
+#import "LoginScreen.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>{
 	SystemInitManager * initManager;
+    
+    LoginScreen* loginScren;
+
+    //UIWindow *window;
 }
 
 
 @property (strong, nonatomic) UIWindow *window;
+
 
 @end

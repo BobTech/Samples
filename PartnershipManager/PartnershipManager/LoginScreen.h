@@ -4,14 +4,13 @@
 #define __LOGINSCREEN_H__
 
 #import <UIKit/UIKit.h>
-//#import "FirstViewController.h"
 #import "BaseView.h"
 
 @class LoginData;
 @class BaseViewController;
 
 
-/* Login screen to enter the URHOtv credentials */
+/* Login screen to enter the login credentials */
 @interface LoginScreen : BaseView <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate> {
 
 	UILabel *informationText;
@@ -19,7 +18,7 @@
 	UITextField *password;
 	NSString *userNameText;
 	NSString *passWText;
-    bool loginOK;
+    int loginUser;
     
   //  WaitScreen *loginWaitScreen;
     

@@ -24,17 +24,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="e5h-dB-jOb" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="18v-XF-t2k"/>
                             <constraint firstItem="20" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="21X-Fc-h5m"/>
-                            <constraint firstItem="xkG-A5-kam" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="385" id="5IE-x2-tLe"/>
-                            <constraint firstItem="xkG-A5-kam" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="5Xf-BE-w1C"/>
                             <constraint firstItem="20" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="82v-FK-dPD"/>
+                            <constraint firstAttribute="trailing" secondItem="e5h-dB-jOb" secondAttribute="trailing" constant="380" id="Cgr-IW-PhO"/>
+                            <constraint firstItem="e5h-dB-jOb" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="DGK-Xo-o6Z"/>
                             <constraint firstItem="xkG-A5-kam" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="EvY-yG-nkf"/>
-                            <constraint firstItem="e5h-dB-jOb" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="Tzu-KM-SxJ"/>
-                            <constraint firstAttribute="trailing" secondItem="e5h-dB-jOb" secondAttribute="trailing" constant="382" id="ZzQ-lo-1hI"/>
+                            <constraint firstItem="e5h-dB-jOb" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="Ox8-V3-czy"/>
+                            <constraint firstItem="xkG-A5-kam" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="UmF-JQ-wrK"/>
                             <constraint firstItem="xkG-A5-kam" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="aH8-iN-S5V"/>
                             <constraint firstItem="20" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="i7B-V8-9lR"/>
-                            <constraint firstItem="e5h-dB-jOb" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="qOT-Sc-hwZ"/>
+                            <constraint firstItem="xkG-A5-kam" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="388" id="iu5-U4-Dwa"/>
+                            <constraint firstItem="e5h-dB-jOb" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="yq9-Dc-QPr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Members" image="onePerson.png" id="7"/>
@@ -60,32 +60,32 @@
                                     <navigationItem id="24"/>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKb-aO-PfJ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytD-Ga-JVY">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNw-Xo-E3f">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9M-u0-L7m">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XKb-aO-PfJ" firstAttribute="top" secondItem="16" secondAttribute="top" constant="133" id="7VH-RO-O3H"/>
-                            <constraint firstAttribute="trailing" secondItem="XKb-aO-PfJ" secondAttribute="trailing" constant="405" id="NRH-Y5-18J"/>
-                            <constraint firstAttribute="trailing" secondItem="BNw-Xo-E3f" secondAttribute="trailing" constant="13" id="Scy-xc-Q9c"/>
+                            <constraint firstItem="e9M-u0-L7m" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="2zD-id-w45"/>
+                            <constraint firstAttribute="trailing" secondItem="ytD-Ga-JVY" secondAttribute="trailing" constant="375" id="MRu-dD-ZfM"/>
+                            <constraint firstItem="ytD-Ga-JVY" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="Nak-Vm-nok"/>
+                            <constraint firstItem="ytD-Ga-JVY" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="SRc-Uh-fB8"/>
+                            <constraint firstItem="ytD-Ga-JVY" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="UcV-JY-lBD"/>
+                            <constraint firstItem="e9M-u0-L7m" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="WWP-mh-7r7"/>
+                            <constraint firstItem="e9M-u0-L7m" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="394" id="Wew-n5-Kxu"/>
                             <constraint firstItem="23" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="YQd-P8-ET5"/>
-                            <constraint firstItem="XKb-aO-PfJ" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="aJp-mf-6ai"/>
+                            <constraint firstAttribute="trailing" secondItem="e9M-u0-L7m" secondAttribute="trailing" constant="8" id="dSy-fV-Dsv"/>
                             <constraint firstItem="23" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="eH6-Me-VTD"/>
-                            <constraint firstAttribute="bottom" secondItem="BNw-Xo-E3f" secondAttribute="bottom" constant="61" id="hXV-po-ZAn"/>
                             <constraint firstItem="23" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="kTD-uS-vbp"/>
-                            <constraint firstAttribute="bottom" secondItem="XKb-aO-PfJ" secondAttribute="bottom" constant="168" id="vxC-LU-Dv9"/>
-                            <constraint firstItem="BNw-Xo-E3f" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="390" id="wcc-Ep-eCw"/>
-                            <constraint firstItem="BNw-Xo-E3f" firstAttribute="top" secondItem="16" secondAttribute="top" constant="105" id="x19-t8-Yaz"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Groups" image="group2.png" id="6"/>
                     <connections>
-                        <outlet property="leftView" destination="XKb-aO-PfJ" id="5fs-bh-Ixd"/>
-                        <outlet property="rightView" destination="BNw-Xo-E3f" id="iB4-Fz-Tb2"/>
+                        <outlet property="leftView1" destination="ytD-Ga-JVY" id="00T-0I-qqv"/>
+                        <outlet property="rightView" destination="e9M-u0-L7m" id="GiM-ii-TSP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
@@ -133,7 +133,7 @@
         <class className="SecondViewController_iPad" superclassName="BaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController_iPad.h"/>
             <relationships>
-                <relationship kind="outlet" name="leftView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="leftView1" candidateClass="UIView"/>
                 <relationship kind="outlet" name="rightView" candidateClass="UIView"/>
             </relationships>
         </class>

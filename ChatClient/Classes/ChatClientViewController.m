@@ -35,11 +35,17 @@
 	self.tView.dataSource = self;
 	
 }
+- (IBAction)goBack:(id)sender {
+    [self.view bringSubviewToFront:joinView];
+
+}
 
 
 - (void) initNetworkCommunication {
     NSString *ipAdd =self.ipAddress.text;
-    NSString *mPort =[self.port.text intValue];
+    int *mPort =[self.port.text intValue];
+    
+    NSLog(@"I address: %@", ipAdd);
 
 	CFReadStreamRef readStream;
 	CFWriteStreamRef writeStream;

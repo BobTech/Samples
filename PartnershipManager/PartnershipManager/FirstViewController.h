@@ -8,38 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "MembersListView.h"
-#import <MessageUI/MessageUI.h>
-#import <MessageUI/MFMailComposeViewController.h>
 #import "PersonData.h"
-#import "LoginScreen.h"
 #import "AppDataManager.h"
 #import "SystemInitManager.h"
 #include "BaseViewController.h"
 
 
-@interface FirstViewController : BaseViewController<MFMailComposeViewControllerDelegate,
-MFMessageComposeViewControllerDelegate, UINavigationControllerDelegate> {
+@interface FirstViewController : BaseViewController{
    
-    MembersListView *membersView;
- //   NSMutableArray *subViews;
-
-    LoginScreen* loginScren;
-    
-    UINavigationBar* naviBar;
+    MembersListView *membersView;    
     
 }
 
-//@property (nonatomic, retain) NSMutableArray *subViews;
-
--(void)showMailPicker:(NSMutableArray*)aPersons;
--(void)showSMSPicker:(NSMutableArray*)aPersons;
--(void)displayMailComposerSheet:(NSMutableArray*)aPersons;
--(void)displaySMSComposerSheet:(NSMutableArray*)aPersons;
-
 - (void)showMembersListView ;
 //- (void)updateData;
-
-- (void)enableTabbar ;
 
 
 @end

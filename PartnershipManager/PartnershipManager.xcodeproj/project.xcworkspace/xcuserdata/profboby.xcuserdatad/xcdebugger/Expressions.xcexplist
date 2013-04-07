@@ -52,6 +52,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "prepareForMethodLookup:(null)">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[BaseView dismissSubview:]:BaseView.m">
          <PersistentStrings>
             <PersistentString
@@ -67,6 +75,14 @@
          <PersistentStrings>
             <PersistentString
                value = "[ApplicationData sharedApplicationData]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LoginScreen loginCompleted]:LoginScreen.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "loginUser">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -160,6 +176,17 @@
                value = "infoText">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BaseViewController storeCSVLocally]:BaseViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[ApplicationData sharedApplicationData]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ApplicationData storeCSVLocally]:ApplicationData.m">
       </ContextState>
       <ContextState
          contextName = "-[MonthlyListViewGroup setupMembersByMonth]:MonthlyListViewGroup.m">

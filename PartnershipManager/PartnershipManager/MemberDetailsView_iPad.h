@@ -21,12 +21,10 @@
 /*Methods declaration*/
 - (id)initWithFrame:(CGRect)frame andSubAreaData:(PersonData*)data andNaviBar:(UINavigationBar*)bar;
 - (void)createMemberDetailsNewSubView:(NSObject*)obj ;
+-(void) setPersonsData:(PersonData*)aData ;
+
 
 /* UITableViewDelegate methods */
-
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
-
-/* */
--(void) setPersonsData:(PersonData*)aData ;
 @end

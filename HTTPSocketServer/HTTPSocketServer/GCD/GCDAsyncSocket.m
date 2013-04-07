@@ -2614,6 +2614,7 @@ enum GCDAsyncSocketConfig
 		
 		dispatch_resume(connectTimer);
 	}
+ 
 }
 
 - (void)endConnectTimeout
@@ -4032,7 +4033,7 @@ enum GCDAsyncSocketConfig
 				LogVerbose(@"Dequeued GCDAsyncReadPacket");
 				
 				// Setup read timer (if needed)
-				[self setupReadTimerWithTimeout:currentRead->timeout];
+			//	[self setupReadTimerWithTimeout:currentRead->timeout]; //commented out timer
 				
 				// Immediately read, if possible
 				[self doReadData];

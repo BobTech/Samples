@@ -13,6 +13,7 @@
 #import "Strings.h"
 #import "ModelConstants.h"
 #import "BaseViewController.h"
+#import "ApplicationData.h"
 
 enum {
 	kUsername = 1000,
@@ -164,7 +165,7 @@ enum {
    // loginWaitScreen = nil;
     
     //if login is successfull save username and password locally
-    if (loginOK) {
+    if ((loginUser ==1) ||(loginUser ==2) ||(loginUser == 3)) {
         [[UserDataManager instance] insertDataWithKey:kUserNameField obj:userNameText];
         [[UserDataManager instance] insertDataWithKey:kPasswordField obj:passWText];
 
@@ -172,6 +173,21 @@ enum {
         
         UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:kLoginSuccessDialogHeader message:kLoginSuccessDialogText delegate:nil cancelButtonTitle:kLoginSuccessDialogButtonText otherButtonTitles:nil];
 		[alertView show];
+        
+        if (loginUser ==1) {
+            [[ApplicationData sharedApplicationData] downloadFromDropBox:1];//1,2,3 All,A,B
+
+            //All church
+        }else if (loginUser ==2) {
+            [[ApplicationData sharedApplicationData] downloadFromDropBox:2];//1,2,3 All,A,B
+
+            // church A
+        }else if (loginUser ==3) {
+            // Church B
+            [[ApplicationData sharedApplicationData] downloadFromDropBox:3];//1,2,3 All,A,B
+
+        }
+        
         if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad) //iPad
         {
              [self removeFromSuperview];
@@ -182,11 +198,9 @@ enum {
 
         }
 
-      //  [super dismissSubview:nil];
         [self removeFromSuperview];
-        [parentView enableTabbar];
-        [parentView showMembersListView];
-        
+        [parentView loginCompleted];
+                
     } else {
         UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:kLoginFailedDialogHeader message:kLoginFailedDialogText delegate:nil cancelButtonTitle:kLoginFailedDialogButtonText otherButtonTitles:nil];
 		[alertView show];
@@ -205,7 +219,7 @@ enum {
     
     DebugLog(@"Username: %@ Password: %@", userNameText, passWText);
 
-    loginOK = [loginMgr signInToServiceWithUsername:userNameText andPassword:passWText];
+    loginUser = [loginMgr signInToServiceWithUsername:userNameText andPassword:passWText];
     
     //[loginMgr release];
     loginMgr = nil;   
@@ -222,7 +236,7 @@ enum {
     
     DebugLog(@"launchLoginWithUserName Username: %@ Password: %@", userNameText, passWText);
     
-    loginOK = [loginMgr signInToServiceWithUsername:userNameText andPassword:passWText];
+    loginUser = [loginMgr signInToServiceWithUsername:userNameText andPassword:passWText];
     
     [loginMgr release];
     loginMgr = nil;   
@@ -246,9 +260,6 @@ enum {
 			[password becomeFirstResponder];
 		}
 	} else if (indexPath.section == 2) {
-	/*	loginWaitScreen = [[WaitScreen alloc] initWithFrame:self.frame transparency:0.7 text:kLoginWaitForSuccess];
-        [self addSubview:loginWaitScreen];
-        [NSThread detachNewThreadSelector:@selector(launchLogin:) toTarget:self withObject:self];		*/
         [self launchLogin:self];
     }	
 }

@@ -234,7 +234,7 @@
 		}
 	});
 	
-	NSString *welcomeMsg = @"Welcome to the AsyncSocket Echo Server\r\n";
+	NSString *welcomeMsg = @"Welcome to the Bob's Echo Server\r\n";
 	NSData *welcomeData = [welcomeMsg dataUsingEncoding:NSUTF8StringEncoding];
 	
 	[newSocket writeData:welcomeData withTimeout:-1 tag:WELCOME_MSG];
@@ -248,7 +248,7 @@
 - (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag
 {
 	// This method is executed on the socketQueue (not the main thread)
-	
+	NSLog(@" Written  :%@", [GCDAsyncSocket CRLFData] );
 	if (tag == ECHO_MSG)
 	{
 		[sock readDataToData:[GCDAsyncSocket CRLFData] withTimeout:READ_TIMEOUT tag:0];
@@ -279,6 +279,14 @@
 	// Echo message back to client
 	[sock writeData:data withTimeout:-1 tag:ECHO_MSG];
 }
+
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    
+    NSLog(@"Receiving data... Length: %d", [data length]);
+       
+}
+
 
 /**
  * This method is called if a read has timed out.
@@ -353,7 +361,9 @@
         desc.numberOfLines = 1;
         desc.text = s;
         [cell.contentView addSubview:desc];
-        // [cell.contentView sizeToFit];
+        [cell.contentView sizeToFit];
+        cell.backgroundColor =[UIColor blueColor];
+
     }
     
 	return cell;
@@ -367,7 +377,7 @@
 
 /* Sets up background color for a single cell */
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    cell.backgroundColor =[UIColor clearColor];
+    cell.backgroundColor =[UIColor redColor];
 }
 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
